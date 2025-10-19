@@ -1,0 +1,26 @@
+name: qPCR_pack
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  # Build tools
+  - pyinstaller>=6
+  - pyinstaller-hooks-contrib
+  - setuptools
+  - wheel
+  # GUI / Qt (stable series to avoid macOS Cocoa issues)
+  - pyside6=6.7.*
+  - qt-main=6.7.*
+  # Data stack (minimum required by the app)
+  - pandas
+  - openpyxl
+  - xlsxwriter
+  # Icon conversion on Windows (PNG→ICO)
+  - pillow
+  # (Optional) If you want to try UPX compression on Windows, install:
+  # - upx
+  # but it may slow startup and occasionally trigger AV warnings.
+  - pip:
+      # keep empty unless you truly need extra pip-only packages
+      - 
