@@ -21,6 +21,6 @@ dependencies:
   # (Optional) If you want to try UPX compression on Windows, install:
   # - upx
   # but it may slow startup and occasionally trigger AV warnings.
-  - pip:
+  # - pip:
       # keep empty unless you truly need extra pip-only packages
       - 

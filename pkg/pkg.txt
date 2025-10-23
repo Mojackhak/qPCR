@@ -1,0 +1,9 @@
+conda activate qPCR_pack
+cd /Users/mojackhu/Github/qPCR
+
+# Recommended: minimal size + single file
+python gui/app.py --build --slim --onefile
+
+# If you prefer stability (slightly larger), it will still generate only one file,
+# because the 'dist' folder is cleared before building.
+# python gui/app.py --build --onefile
